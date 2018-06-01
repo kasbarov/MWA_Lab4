@@ -1,0 +1,14 @@
+{
+  "name": "lab4",
+  "version": "1.0.0",
+  "description": "MWA lab4",
+  "main": "CheckSystem_Observable.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Khalid",
+  "license": "ISC",
+  "dependencies": {
+    "rxjs": "^6.2.0"
+  }
+}
