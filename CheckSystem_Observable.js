@@ -1,5 +1,6 @@
 const os = require('os');
 const RX =require('rxjs');
+
 // minimum memory size is 4 GB
 const minMemorySize = 4 * 1024 * 1024 * 1024;
 
