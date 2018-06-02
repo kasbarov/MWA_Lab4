@@ -1,5 +1,5 @@
 const os = require('os');
-const RX =require('rxjs');
+const {from} =require('rxjs');
 
 // minimum memory size is 4 GB
 const minMemorySize = 4 * 1024 * 1024 * 1024;
@@ -22,7 +22,7 @@ var checkSystemPromise = new Promise((resolve, reject) => {
     });
 
 // using the last version of rxjs
-RX.from(checkSystemPromise)
+from(checkSystemPromise)
 .subscribe(
     result=>{ console.log(result);},
      err => {console.log(err);}
