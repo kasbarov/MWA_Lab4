@@ -30,14 +30,18 @@ function handleRequest(serverRequest) {
 
         console.log (msg);
 
-        if (msg === 'end')
-            serverRequest.res.end();
+      //  if (msg === 'end')
+          //  serverRequest.res.end();
 
-        else
+       /// else
             serverRequest.res.write(msg);
 
 
     });
+
+    forked.on('exit', ()=>{
+        serverRequest.res.end();
+    })
 
 
 

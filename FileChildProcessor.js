@@ -10,7 +10,8 @@ process.on('message', (msg) => {
     });
   
     fileSrc.on('end', ()=>{
-        process.send('end');
+        process.exit();
+      //  process.send('end');
     })
   });
   
